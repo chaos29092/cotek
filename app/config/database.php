@@ -55,7 +55,7 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'dto',
+			'database'  => 'cotek',
 			'username'  => 'root',
 			'password'  => '',
 			'charset'   => 'utf8',
