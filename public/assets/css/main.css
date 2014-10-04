@@ -46,12 +46,19 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 #app {
-    margin-top: 50px;
+    margin-top: 30px;
+    padding-bottom: 20px;
 }
 #advantage {
-    margin-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: #f1f1f1;
 }
-
+#me {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: #f1f1f1;
+}
 .example-image {
     width: 20rem;
     border-radius: 5px;
@@ -61,10 +68,14 @@ h1,h2,h3,h4,h5,h6 {
     padding-top: 1rem;
     background-color: #f1f1f1;
 }
+#footer .list-unstyled {
+    line-height:2 ;
+}
 
 #copyright {
     background-color: #f1f1f1;
 }
+
 
 #alertmessage {
     margin-bottom: 0;
