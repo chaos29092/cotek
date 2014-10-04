@@ -217,77 +217,162 @@
         </div>
     </div>
 </div>
-<hr/>
 {{-- 产品功能结束 --}}
 
 {{-- 产品优势开始 --}}
-<div class="container" id="advantage">
-    <div class="row">
-        <div class="col-md-6">
-            {{$product->advantage}}
-        </div>
-        <div class="col-md-6">
-            <div class="row">
-                <div class="col-md-6">
-                    <a href="{{asset('img/product/'.$product->name.'/'.$product->adphoto_1)}}" data-lightbox="image-1"
-                       data-title="My caption"
-                       class="pull-right"><img
-                            src="{{asset('img/product/'.$product->name.'/'.$product->adphoto_1)}}" class="example-image"
-                            alt="{{$product->name.' advantage 1'}}"/></a>
-                </div>
-                <div class="col-md-6">
-                    <a href="{{asset('img/product/'.$product->name.'/'.$product->adphoto_2)}}" data-lightbox="image-1"
-                       data-title="My caption"><img
-                            src="{{asset('img/product/'.$product->name.'/'.$product->adphoto_2)}}" class="example-image"
-                            alt="{{$product->name.' advantage 2'}}"/></a>
-                </div>
+<div id="advantage">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                {{$product->advantage}}
             </div>
-            <hr/>
-            <div class="row">
-                <div class="col-md-6">
-                    <a href="{{asset('img/product/'.$product->name.'/'.$product->adphoto_3)}}" data-lightbox="image-1"
-                       data-title="My caption"
-                       class="pull-right"><img
-                            src="{{asset('img/product/'.$product->name.'/'.$product->adphoto_3)}}" class="example-image"
-                            alt="{{$product->name.' advantage 3'}}"/></a>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="{{asset('img/product/'.$product->name.'/'.$product->adphoto_1)}}" data-lightbox="image-1"
+                           data-title="My caption"
+                           class="pull-right"><img
+                                src="{{asset('img/product/'.$product->name.'/'.$product->adphoto_1)}}" class="example-image"
+                                alt="{{$product->name.' advantage 1'}}"/></a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="{{asset('img/product/'.$product->name.'/'.$product->adphoto_2)}}" data-lightbox="image-1"
+                           data-title="My caption"><img
+                                src="{{asset('img/product/'.$product->name.'/'.$product->adphoto_2)}}" class="example-image"
+                                alt="{{$product->name.' advantage 2'}}"/></a>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <a href="{{asset('img/product/'.$product->name.'/'.$product->adphoto_4)}}" data-lightbox="image-1"
-                       data-title="My caption"><img
-                            src="{{asset('img/product/'.$product->name.'/'.$product->adphoto_4)}}" class="example-image"
-                            alt="{{$product->name.' advantage 4'}}"/></a>
+                <hr/>
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="{{asset('img/product/'.$product->name.'/'.$product->adphoto_3)}}" data-lightbox="image-1"
+                           data-title="My caption"
+                           class="pull-right"><img
+                                src="{{asset('img/product/'.$product->name.'/'.$product->adphoto_3)}}" class="example-image"
+                                alt="{{$product->name.' advantage 3'}}"/></a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="{{asset('img/product/'.$product->name.'/'.$product->adphoto_4)}}" data-lightbox="image-1"
+                           data-title="My caption"><img
+                                src="{{asset('img/product/'.$product->name.'/'.$product->adphoto_4)}}" class="example-image"
+                                alt="{{$product->name.' advantage 4'}}"/></a>
+                    </div>
                 </div>
-            </div>
 
+            </div>
         </div>
     </div>
 </div>
 {{-- 产品优势结束 --}}
 
-{{-- 客户夸奖开始 --}}
+{{-- 产品表格开始 --}}
+<div class="container">
+    <h2 class="text-center h1">Product Parameters</h2>
+    <table class="table table-bordered">
+        <tr>
+            <th>MODEL</th>
+            <th>CTK-360C</th>
+            <th>CTK-720C</th>
+            <th>CTK-870C</th>
+            <th>CTK-1100C</th>
+            <th>CTK-1350C</th>
+        </tr>
+        <tr>
+            <td>Max Paper Width</td>
+            <td>360mm</td>
+            <td>720mm</td>
+            <td>870mm</td>
+            <td>1100mm</td>
+            <td>1350mm</td>
+        </tr>
+        <tr>
+            <td>Max Cutting Width</td>
+            <td>330mm(12" )</td>
+            <td>630mm(24" )</td>
+            <td>780mm(30" )</td>
+            <td>1000mm(39" )</td>
+            <td>1260mm(48" )</td>
+        </tr>
+        <tr>
+            <td>Motor</td>
+            <td colspan="5">Original imported high speed stepper/servo motor</td>
+        </tr>
+        <tr>
+            <td>Cutting pressure/Speed</td>
+            <td colspan="5">10-990g  /  50-800mm/s</td>
+        </tr>
+        <tr>
+            <td>Repeatable precision</td>
+            <td colspan="5">< ±0.1mm</td>
+        </tr>
+        <tr>
+            <td>Carriage</td>
+            <td colspan="5">Whole aluminum Carriage with Imported Gear inside.</td>
+        </tr>
+        <tr>
+            <td>Mechanical Resolution</td>
+            <td colspan="5">0.0254mm/Step(0.001"/step)</td>
+        </tr>
+        <tr>
+            <td>Special Setting</td>
+            <td colspan="5">Dual Cutter holders, Dual strips</td>
+        </tr>
+        <tr>
+            <td>Stands</td>
+            <td colspan="5">Yes, All comes with Stand besides CTK-360C</td>
+        </tr>
+        <tr>
+            <td>Interface/EMS-memory</td>
+            <td colspan="5">Serial & USB / 8M or Serial, USB, reticle & USB flash disk </td>
+        </tr>
+        <tr>
+            <td>Control language</td>
+            <td colspan="5">DMPL/HPGL </td>
+        </tr>
+        <tr>
+            <td>Type of cutter</td>
+            <td colspan="5">Long longevity high-speed carbon alloy-steel cutter</td>
+        </tr>
+        <tr>
+            <td>System</td>
+            <td colspan="5">Vista 32bit&64bit, Win 7 32bits&64bits, XP, MAC, etc.</td>
+        </tr>
+        <tr>
+            <td>Software</td>
+            <td colspan="5">CorelDraw, Artcut, Master Cut, Sign Cut pro, Flexi starter, Ucancam, Adobe Illustrator, etc.</td>
+        </tr>
+        <tr>
+            <td>Cutting materials</td>
+            <td colspan="5">Vinyl, sticker, car sticker, decal, EC film, sand blast film, reflective sheet, cardboard, etc.</td>
+        </tr>
+    </table>
+</div>
+{{-- 产品表格结束 --}}
+<hr/>
+{{-- 体现实力开始 --}}
 <div>
     <h2 class="text-center h1">Our Factory and Clients</h2>
     <img src="{{asset('img/Global_Customer_2.jpg')}}" class="img-responsive" alt=""/>
 </div>
-{{-- 客户夸奖结束 --}}
-<hr/>
+{{-- 体现实力结束 --}}
 {{--客户经理开始--}}
-<div class="container">
-    <div class="row">
-        <div class="col-md-2">
-            <p class="text-center"><img src="{{asset('img\author.jpg')}}" alt="Elena" class="img-circle"/></p>
-        </div>
-        <div class="col-md-5">
-            {{$product->tocustomer}}
-        </div>
-        <div class="col-md-5">
-            <p class="text-center"><img src="{{asset('img/product/'.$product->name.'/'.$product->footerphoto)}}"
-                                        alt="{{$product->name}}"/></p>
+<div id="me">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <p class="text-center"><img src="{{asset('img\author.jpg')}}" alt="Elena" class="img-circle"/></p>
+            </div>
+            <div class="col-md-5">
+                {{$product->tocustomer}}
+            </div>
+            <div class="col-md-5">
+                <p class="text-center"><img src="{{asset('img/product/'.$product->name.'/'.$product->footerphoto)}}"
+                                            alt="{{$product->name}}"/></p>
+            </div>
         </div>
     </div>
 </div>
 {{--客户经理结束--}}
-<hr/>
 {{-- 联系表格开始 --}}
 <div id="contact">
     <div class="container">
