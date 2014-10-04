@@ -265,7 +265,7 @@
 {{-- 产品优势结束 --}}
 
 {{-- 客户夸奖开始 --}}
-<div class="container-fluid">
+<div>
     <h2 class="text-center h1">Our Factory and Clients</h2>
     <img src="{{asset('img/Global_Customer_2.jpg')}}" class="img-responsive" alt=""/>
 </div>
@@ -287,7 +287,7 @@
     </div>
 </div>
 {{--客户经理结束--}}
-
+<hr/>
 {{-- 联系表格开始 --}}
 <div id="contact">
     <div class="container">
@@ -328,17 +328,48 @@
 {{-- 联系表格结束 --}}
 
 {{--footer开始--}}
-<div class="container" id="footer">
-    <div class="col-md-4">
+<div id="footer">
+    <div class="container">
+        <div class="col-md-3">
+        <h3>Address</h3>
+        <p>dasassa</p>
+        <p>dasassa</p>
+        <p>dasassa</p>
+        </div>
+        <div class="col-md-3">
+        <h3>PRODUCTS</h3>
+        <ul class="list-unstyled">
+            <li><a href="">PRODUCTS_1</a></li>
+            <li>PRODUCTS_2</li>
+            <li>PRODUCTS_3</li>
+            </ul>
+        </div>
+        <div class="col-md-3">
+            <h3>ABOUT</h3>
+            <ul class="list-unstyled">
+                        <li><a href="">Contact</a></li>
+                        <li>Press</li>
+                        <li>Career</li>
+                        </ul>
+        </div>
+        <div class="col-md-3">
+        <h3>COLLABORATION</h3>
+        <ul class="list-unstyled">
+                                <li><a href="">Team</a></li>
+                                <li>Office</li>
+                                <li>Partner</li>
+                                </ul>
+        </div>
+</div>
+<div class="container">
+       <p ></p>
+</div>
+</div>
 
-        <ul class="list-inline">
-            <li><a href="/">Indice</a></li>
-            <li><a href="{{asset('products')}}">Todos Los Productos</a></li>
-        </ul>
-    </div>
-    <div class="col-md-8">
-        <p class="text-right">©  Camellia 2014 Todos los derechos reservados.</p>
-    </div>
+<div id="copyright">
+<div class="container">
+<p class="h5">Copyright  © 2014 | Cotek</p>
+</div>
 </div>
 {{--footer结束--}}
 
