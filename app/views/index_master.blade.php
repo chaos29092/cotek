@@ -137,7 +137,7 @@
             <h3>ABOUT</h3>
             <ul class="list-unstyled">
                         <li><a href="{{asset('contact')}}" target="_blank">Contact</a></li>
-                        <li>Support</li>
+                        <li><a href="{{asset('support')}}" target="_blank">Support</a></li>
                         <li><a href="{{asset('faq')}}" target="_blank">FAQ</a></li>
                         </ul>
         </div>

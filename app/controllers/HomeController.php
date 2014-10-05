@@ -29,4 +29,9 @@ class HomeController extends BaseController {
     {
         return View::make('aboutUs');
     }
+
+    public function support()
+    {
+        return View::make('support');
+    }
 }
