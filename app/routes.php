@@ -15,6 +15,7 @@ Route::model('product', 'Product');
 Route::get('/', 'ProductController@index');
 Route::get('faq','HomeController@faq');
 Route::get('contact','HomeController@contact');
+Route::get('aboutUs','HomeController@aboutUs');
 
 //product page
 Route::get('products/{product}', array('as' => 'product', 'uses' => 'ProductController@dicountPage'));

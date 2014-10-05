@@ -15,11 +15,6 @@ class HomeController extends BaseController {
 	|
 	*/
 
-	public function showWelcome()
-	{
-		return View::make('hello');
-	}
-
     public function faq()
     {
         return View::make('FAQ');
@@ -28,5 +23,10 @@ class HomeController extends BaseController {
     public function contact()
     {
         return View::make('contact');
+    }
+
+    public function aboutUs()
+    {
+        return View::make('aboutUs');
     }
 }
