@@ -306,9 +306,9 @@
     <div class="container">
         <div class="col-md-3">
         <h3>Address</h3>
-        <p>地址</p>
-        <p>电话</p>
-        <p>邮箱</p>
+        <p>Y06 Building,11 Changchun Road, Zhengzhou City,Henan,China,450001</p>
+        <p>Tel: +86 139 3821 6025</p>
+        <p>E-mail: info@sinohuaxia.com</p>
         </div>
         <div class="col-md-3">
         <h3>热门产品</h3>
@@ -321,7 +321,7 @@
         <div class="col-md-3">
                 <h3>COLLABORATION</h3>
                 <ul class="list-unstyled">
-                                        <li><a href="">Team</a></li>
+                                        <li>Team</li>
                                         <li>Office</li>
                                         <li>Partner</li>
                                         </ul>
@@ -329,9 +329,9 @@
         <div class="col-md-3">
             <h3>ABOUT</h3>
             <ul class="list-unstyled">
-                        <li><a href="">Contact</a></li>
-                        <li>Support</li>
-                        <li>FAQ</li>
+                        <li><a href="{{asset('contact')}}" target="_blank">Contact</a></li>
+                        <li><a href="{{asset('support')}}" target="_blank">Support</a></li>
+                        <li><a href="{{asset('faq')}}" target="_blank">FAQ</a></li>
                         </ul>
         </div>
 
@@ -340,7 +340,7 @@
 
 <div id="copyright">
 <div class="container">
-<p class="h5">Copyright  © 2014 | Cotek</p>
+<p class="h5 text-center">Copyright  © 2014 | Cotek</p>
 </div>
 </div>
 {{--footer结束--}}
