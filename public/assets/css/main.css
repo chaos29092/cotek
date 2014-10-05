@@ -247,6 +247,17 @@ a {
 /*Product list end */
 
 /*navbar*/
-#nav .navbar {
-    margin-bottom: 0;
+a.navbar-brand {
+    padding-top: 0;
+}
+.bs-docs-nav .navbar-brand, .bs-navbar-collapse .navbar-nav>li>a {
+    font-weight: 500;
+    color: #888888;
+}
+.bs-navbar-collapse .navbar-nav>li>a:hover {
+    background-color: #fa8a1c;
+    color: #f1f1f1;
+}
+a:hover {
+    color: #fa8a1c;
 }

@@ -36,129 +36,26 @@
 {{--message结束--}}
 
 {{--Mega menu begin--}}
-<div id="nav" class="container">
-    <nav class="navbar navbar-default">
-        <div class="navbar-header">
-            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/">Camellia</a>
-        </div>
-
-        <div class="collapse navbar-collapse js-navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li class="dropdown mega-dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nuestros Productos <span class="caret"></span></a>
-
-                    <ul class="dropdown-menu mega-dropdown-menu row">
-                        <li class="col-sm-3">
-                            <ul>
-                                <li class="dropdown-header">New in Stores</li>
-                                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <div class="item active">
-                                            <a href="{{asset('products/1')}}" target="_blank"><img
-                                                    src="{{asset('img/menu_1.jpg')}}"
-                                                    class="img-responsive" alt="IPL machine"></a>
-                                            <h4>
-                                                <small>Latest IPL machine Promotions.</small>
-                                            </h4>
-                                            <a href="{{asset('products/1')}}">
-                                            <button class="btn btn-primary" type="button">1,399.00 €</button>
-                                            <button href="#" class="btn btn-default" type="button"><span
-                                                    class="glyphicon glyphicon-heart"></span> View details
-                                            </button>
-                                            </a>
-                                        </div>
-                                        <!-- End Item -->
-                                        <div class="item">
-                                            <a href="{{asset('products/2')}}" target="_blank"><img
-                                                    src="{{asset('img/menu_2.jpg')}}"
-                                                    class="img-responsive" alt="diodo laser"></a>
-                                            <h4>
-                                                <small>Latest diodo laser Promotions.</small>
-                                            </h4>
-                                            <a href="{{asset('products/2')}}">
-                                            <button class="btn btn-primary" type="button">5,199.00 €</button>
-                                            <button href="#" class="btn btn-default" type="button"><span
-                                                    class="glyphicon glyphicon-heart"></span> View details
-                                            </button>
-                                            </a>
-                                        </div>
-                                        <!-- End Item -->
-                                        <div class="item">
-                                            <a href="{{asset('products/3')}}" target="_blank"><img
-                                                    src="{{asset('img/menu_3.jpg')}}"
-                                                    class="img-responsive" alt="co2 laser machine"></a>
-                                            <h4>
-                                                <small>Latest co2 laser machine Promotions.</small>
-                                            </h4>
-                                            <a href="{{asset('products/1')}}">
-                                            <button class="btn btn-primary" type="button">5,599.00 €</button>
-                                            <button href="#" class="btn btn-default" type="button"><span
-                                                    class="glyphicon glyphicon-heart"></span> View details
-                                            </button>
-                                            </a>
-                                        </div>
-                                        <!-- End Item -->
-                                    </div>
-                                    <!-- End Carousel Inner -->
-                                </div>
-                                <!-- /.carousel -->
-                                <li class="divider"></li>
-                                <li><a href="{{asset('products')}}">View all products <span
-                                            class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
-                            </ul>
-                        </li>
-                        <li class="col-sm-3">
-                            <ul>
-                                <li class="dropdown-header">E-Light</li>
-                                <li><a href="{{asset('products/category/E-Light')}}">All E-Light</a></li>
-                                <li class="divider"></li>
-                                <li class="dropdown-header">Nd-Yag Laser</li>
-                                <li><a href="{{asset('products/category/Nd-Yag Laser')}}">All Nd-Yag Laser</a></li>
-                                <li class="divider"></li>
-                                <li class="dropdown-header">IPL</li>
-                                <li><a href="{{asset('products/category/IPL')}}">All IPL</a></li>
-                                <li class="divider"></li>
-                                <li class="dropdown-header">Multifunction</li>
-                                <li><a href="{{asset('products/category/Multifunction')}}">All Multifunction</a></li>
-                            </ul>
-                        </li>
-                        <li class="col-sm-3">
-                            <ul>
-                                <li class="dropdown-header">Diode Laser</li>
-                                <li><a href="{{asset('products/category/Diode Laser')}}">All Diode Laser</a></li>
-                                <li class="divider"></li>
-                                <li class="dropdown-header">CO2 Laser Fractional</li>
-                                <li><a href="{{asset('products/category/CO2 Laser Fractional')}}">All CO2 Laser Fractional</a></li>
-                                <li class="divider"></li>
-                                <li class="dropdown-header">RF</li>
-                                <li><a href="{{asset('products/category/RF')}}">All RF</a></li>
-                            </ul>
-                        </li>
-                        <li class="col-sm-3">
-                            <ul>
-                                <li class="dropdown-header">Lipolaser</li>
-                                <li><a href="{{asset('products/category/Lipolaser')}}">All Lipolaser</a></li>
-                                <li class="divider"></li>
-                                <li class="dropdown-header">Cavitacion</li>
-                                <li><a href="{{asset('products/category/Cavitacion')}}">All Cavitacion</a></li>
-                                <li class="divider"></li>
-                                <li class="dropdown-header">Cryolipolysis</li>
-                                <li><a href="{{asset('products/category/Cryolipolysis')}}">All Cryolipolysis</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-
-                </li>
-            </ul>
-        </div>
+<div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="../" class="navbar-brand"><img class="img-responsive" src="{{asset('img/logo_test.png')}}" alt="cotek_logo"/></a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://expo.bootcss.com"><strong>首页</strong></a></li>
+        <li><a href="http://blog.getbootstrap.com"><strong>刻字机</strong></a></li>
+        <li><a href="http://blog.getbootstrap.com"><strong>激光机</strong></a></li>
+        <li><a href="http://blog.getbootstrap.com"><strong>关于我们</strong></a></li>
+        <li><a href="http://blog.getbootstrap.com"><strong>联系方式</strong></a></li>
+      </ul>
     </nav>
-</div>
+  </div>
 {{--Mega menu end--}}
 
 {{--Carousel begin--}}
