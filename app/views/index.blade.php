@@ -169,7 +169,7 @@
         <div class="form-group">
             {{ Form::label('email', 'E-Mail', array('class' => 'col-sm-2 control-label')) }}
             <div class="col-sm-4">
-                {{ Form::email('email', null, array('placeholder'=>'youremail@example.com', 'class' => 'form-control'))
+                {{ Form::email('email', null, array('placeholder'=>'youremail@example.com', 'class' => 'form-control required'))
                 }}
             </div>
         </div>

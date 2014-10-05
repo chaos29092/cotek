@@ -13,6 +13,7 @@
 </div>
 
 {{--产品分类--}}
+{{--
 <div class="form-group">
     <label for="category">产品分类</label>
     {{ Form::select('category',
@@ -22,6 +23,7 @@
     'Multifunction'=>'Multifunction'),
     $product->category) }}
 </div>
+--}}
 
 {{--是否促销 is_discount--}}
 <div class="form-group">
@@ -177,13 +179,13 @@
 
 {{--fnt---}}
 <div class="form-group">
-    <label for="fnt">简介下方灰色字体，可以写适用于诊所，美容院等，也可以写一些自己想写的，用于首页,不要太多</label>
+    <label for="fnt">简介下方灰色字体，可以写一些自己想写的，用于首页,不要太多</label>
     <input name="fnt" type="text" class="form-control" id="fnt" value="Suitable for Beauty Hospital，Clinics, Beauty Salons">
 </div>
 
 {{--style---}}
 <div class="form-group">
-    <label for="style">立式or台式，用于首页</label>
+    <label for="style">立式or台式，用于首页,也可以是其他属性</label>
     <input name="style" type="text" class="form-control" id="style" value="Vertical">
 </div>
 
@@ -194,3 +196,4 @@
 {{ Form::close() }}
 
 @stop
+
