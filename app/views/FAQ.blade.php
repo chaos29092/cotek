@@ -122,7 +122,7 @@
         <div class="col-md-offset-1">
             <h2>有任何其他问题？请联系我们</h2>
         </div>
-        {{ Form::open(array('url' => 'dsa', 'class' => 'form-horizontal', 'role' => 'form' )) }}
+        {{ Form::open(array('url' => 'products/faq', 'class' => 'form-horizontal', 'role' => 'form' )) }}
         <div class="form-group">
             {{ Form::label('email', 'E-Mail', array('class' => 'col-sm-2 control-label')) }}
             <div class="col-sm-4">

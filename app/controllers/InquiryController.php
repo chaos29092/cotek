@@ -54,6 +54,18 @@ class InquiryController extends \BaseController {
         return Redirect::back()->with('message', 'Message Send Successfully! We will contact you as soon as possible.');
     }
 
+    public function faqStore()
+    {
+        $date = Input::all();
+        $inquiry = new Inquiry;
+        $inquiry->email = $date['email'];
+        $inquiry->subject = $date['subject'];
+        $inquiry->message = $date['message'];
+        $inquiry->product = 'faq';
+        $inquiry->save();
+        return Redirect::back()->with('message', 'Message Send Successfully! We will contact you as soon as possible.');
+    }
+
 
 	/**
 	 * Display the specified resource.

@@ -27,6 +27,7 @@ Route::get('products/category/{category}','ProductController@category');
 //inquiry store
 Route::post('products/{product}/inquiry', array('as' => 'inquiry', 'before' => 'csrf', 'uses' => 'InquiryController@store'));
 Route::post('products/inquiry', array('before' => 'csrf', 'uses' => 'InquiryController@indexStore'));
+Route::post('products/faq', array('before' => 'csrf', 'uses' => 'InquiryController@faqStore'));
 
 //登陆系统
 Route::get('login', function () {
