@@ -13,6 +13,9 @@
 Route::model('product', 'Product');
 
 Route::get('/', 'ProductController@index');
+Route::get('faq',function(){
+    return View::make('FAQ');
+});
 
 //product page
 Route::get('products/{product}', array('as' => 'product', 'uses' => 'ProductController@dicountPage'));

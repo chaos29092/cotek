@@ -10,7 +10,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Camellia Equipo de belleza</title>
+    <title>Cotek FAQ</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="{{asset('img/favicon.ico')}}" title="Favicon"/>
@@ -27,6 +27,7 @@
     your browser</a> to improve your experience.</p>
 <![endif]-->
 
+<!-- Add your site or application content here -->
 {{--message开始--}}
 @if(Session::has('message'))
 <div class="alert alert-success" id="alertmessage">
@@ -34,8 +35,7 @@
 </div>
 @endif
 {{--message结束--}}
-
-{{--top begin --}}
+{{--top begin--}}
 <div id="top">
     <div class="container">
     <p class="h5">Phone : (353) 1 8530661   |   Mail : <a href="mailto:sales@cotek.com">sales@cotek.com</a></p>
@@ -66,106 +66,63 @@
   </div>
 {{--Mega menu end--}}
 
-
-{{--Carousel begin--}}
+{{--faq begin--}}
 <div class="container">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner">
-
-        <div class="item active">
-          <img src="{{asset('img/1.jpg')}}">
-           <div class="carousel-caption">
-            <h3>Headline1</h3>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>
-          </div>
-        </div><!-- End Item -->
-
-         <div class="item">
-          <img src="{{asset('img/2.jpg')}}">
-           <div class="carousel-caption">
-            <h3>Headline2</h3>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>
-          </div>
-        </div><!-- End Item -->
-
-        <div class="item">
-          <img src="{{asset('img/3.jpg')}}">
-           <div class="carousel-caption">
-            <h3>Headline2</h3>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>
-          </div>
-        </div><!-- End Item -->
-
-      </div><!-- End Carousel Inner -->
-
-
-    	<ul class="nav nav-pills nav-justified">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"><a href="#">About<small>Lorem ipsum dolor sit</small></a></li>
-          <li data-target="#myCarousel" data-slide-to="1"><a href="#">Projects<small>Lorem ipsum dolor sit</small></a></li>
-          <li data-target="#myCarousel" data-slide-to="2"><a href="#">Projects<small>Lorem ipsum dolor sit</small></a></li>
-        </ul>
-
-
-    </div><!-- End Carousel -->
-</div>
-{{--Carousel end--}}
-
-{{--Product list begin--}}
-<div class="container-fluid">
-    <div class="container container-pad" id="property-listings">
-        <div class="row">
-            <div class="col-md-12">
-                <h1>我们能为您提供什么</h1>
-                <p>刻字机，激光机等</p>
-            </div>
+<h1>FAQ</h2>
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Collapsible Group Item #1
+            </a>
+          </h4>
         </div>
-        <div class="row">
-            @foreach($products as $product)
-            <div class="col-sm-6">
-                <div class="brdr bgc-fff pad-10 box-shad btm-mrg-20 property-listing">
-                    <div class="media">
-
-                        <a class="pull-left" href="{{asset('products/'.$product->id)}}" target="_blank">
-                            <img alt="{{$product->name}}" class="img-responsive"
-                                 src="{{asset('img/product/'.$product->name.'/'.$product->indexphoto)}}"></a>
-
-                        <div class="clearfix visible-sm"></div>
-
-                        <div class="media-body fnt-smaller">
-                            <a href="#" target="_parent"></a>
-
-                            <h4 class="media-heading">
-                                <a href="{{asset('products/'.$product->id)}}" target="_blank">{{$product->name}}
-                                    <small class="pull-right">{{$product->style}}</small>
-                                </a></h4>
-
-
-                            <ul class="list-inline mrg-0 btm-mrg-10 clr-535353">
-                                {{$product->mrg}}
-                            </ul>
-
-                            <p class="hidden-xs">{{$product->miniintro}}</p><span
-                                class="fnt-smaller fnt-lighter fnt-arial">{{$product->fnt}}</span>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            @endforeach
+        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel">
+          <div class="panel-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
         </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Collapsible Group Item #2
+            </a>
+          </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel">
+          <div class="panel-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Collapsible Group Item #3
+            </a>
+          </h4>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel">
+          <div class="panel-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
     </div>
 </div>
-{{--Product list end--}}
+{{--faq end--}}
 
 {{-- 联系表格开始 --}}
 <div id="contact">
     <div class="container">
         <div class="col-md-offset-1">
-            <h2>联系我们</h2>
+            <h2>有任何其他问题？请联系我们</h2>
         </div>
-        {{ Form::open(array('url' => 'products/inquiry', 'class' => 'form-horizontal', 'role' => 'form' )) }}
+        {{ Form::open(array('url' => 'dsa', 'class' => 'form-horizontal', 'role' => 'form' )) }}
         <div class="form-group">
             {{ Form::label('email', 'E-Mail', array('class' => 'col-sm-2 control-label')) }}
             <div class="col-sm-4">
@@ -177,7 +134,7 @@
         <div class="form-group">
             {{ Form::label('subject', 'Subject', array('class' => 'col-sm-2 control-label')) }}
             <div class="col-sm-4">
-                {{ Form::text('subject', null, array('placeholder' => 'which product you like', 'class' => 'form-control')) }}
+                {{ Form::text('subject', null, array('placeholder' => 'Your Question', 'class' => 'form-control')) }}
             </div>
         </div>
 
@@ -228,7 +185,7 @@
             <ul class="list-unstyled">
                         <li><a href="">Contact</a></li>
                         <li>Support</li>
-                        <li><a href="{{asset('faq')}}" target="_blank">FAQ</a></li>
+                        <li>FAQ</li>
                         </ul>
         </div>
 
@@ -242,11 +199,13 @@
 </div>
 {{--footer结束--}}
 
+
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery.min.js"><\/script>')</script>
 {{ HTML::script('assets/js/vendor/bootstrap.min.js') }}
 {{ HTML::script('assets/js/plugins.js') }}
 {{ HTML::script('assets/js/main.js') }}
+{{ HTML::script('assets/js/vendor/lightbox.min.js') }}
 
 {{--
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

@@ -17,11 +17,15 @@ h1,h2,h3,h4,h5,h6 {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
+    padding-top: 10px;
     margin-bottom: 0;
     color: #ffffff;
 }
 
-
+#top-button:hover {
+    color: #fa8a1c;
+    border-color: #fa8a1c;
+}
 
 #head {
     margin-top: 50px;
@@ -70,6 +74,12 @@ h1,h2,h3,h4,h5,h6 {
 }
 #footer .list-unstyled {
     line-height:2 ;
+}
+#footer a {
+    color: inherit;
+}
+#footer a:hover {
+    color: #fa8a1c;
 }
 
 #copyright {
@@ -261,3 +271,33 @@ a.navbar-brand {
 a:hover {
     color: #fa8a1c;
 }
+.navbar-brand {
+    padding-left: 0;
+}
+
+/*top*/
+#top {
+    background-color: #fa8a1c;
+    color: #f1f1f1;
+}
+#top a {
+    color: #f1f1f1;
+}
+#top a:hover {
+    color: #03A1D1;
+}
+
+/*Tabbed Slider Carousel*/
+#myCarousel .nav a small {
+    display:block;
+}
+#myCarousel .nav {
+    background:#eee;
+}
+#myCarousel .nav a {
+     border-radius:0px;
+ }
+#myCarousel .nav li.active a{
+    background-color: #fa8a1c;
+}
+/*end*/
