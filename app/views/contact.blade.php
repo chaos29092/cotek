@@ -10,7 +10,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Camellia Equipo de belleza</title>
+    <title>Cotek Contact</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="{{asset('img/favicon.ico')}}" title="Favicon"/>
@@ -27,6 +27,7 @@
     your browser</a> to improve your experience.</p>
 <![endif]-->
 
+<!-- Add your site or application content here -->
 {{--message开始--}}
 @if(Session::has('message'))
 <div class="alert alert-success" id="alertmessage">
@@ -34,8 +35,7 @@
 </div>
 @endif
 {{--message结束--}}
-
-{{--top begin --}}
+{{--top begin--}}
 <div id="top">
     <div class="container">
     <p class="h5">Phone : +86 139 3821 6025   |   Mail : <a href="mailto:info@sinohuaxia.com">info@sinohuaxia.com</a></p>
@@ -65,111 +65,31 @@
     </nav>
   </div>
 {{--Mega menu end--}}
-
-
-{{--Carousel begin--}}
+<hr/>
+{{--Contact begin--}}
 <div class="container">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner">
-
-        <div class="item active">
-          <img src="{{asset('img/1.jpg')}}">
-           <div class="carousel-caption">
-            <h3>Headline1</h3>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>
-          </div>
-        </div><!-- End Item -->
-
-         <div class="item">
-          <img src="{{asset('img/2.jpg')}}">
-           <div class="carousel-caption">
-            <h3>Headline2</h3>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>
-          </div>
-        </div><!-- End Item -->
-
-        <div class="item">
-          <img src="{{asset('img/3.jpg')}}">
-           <div class="carousel-caption">
-            <h3>Headline2</h3>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>
-          </div>
-        </div><!-- End Item -->
-
-      </div><!-- End Carousel Inner -->
-
-
-    	<ul class="nav nav-pills nav-justified">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"><a href="#">About<small>Lorem ipsum dolor sit</small></a></li>
-          <li data-target="#myCarousel" data-slide-to="1"><a href="#">Projects<small>Lorem ipsum dolor sit</small></a></li>
-          <li data-target="#myCarousel" data-slide-to="2"><a href="#">Projects<small>Lorem ipsum dolor sit</small></a></li>
-        </ul>
-
-
-    </div><!-- End Carousel -->
+<h1>Contact</h1>
+<address>
+  <strong>Henan Huaxia Haina Sales & Marketing Co.,Ltd. </strong><br>
+  Y06 Building,11 Changchun Road,<br>
+  Zhengzhou City,Henan,China,450001<br>
+  <abbr title="Phone">Tel:</abbr> +86 139 3821 6025<br>
+  <abbr title="email">Email:</abbr> <a href="mailto:info@sinohuaxia.com">info@sinohuaxia.com</a>
+</address>
 </div>
-{{--Carousel end--}}
-
-{{--Product list begin--}}
-<div class="container-fluid">
-    <div class="container container-pad" id="property-listings">
-        <div class="row">
-            <div class="col-md-12">
-                <h1>我们能为您提供什么</h1>
-                <p>刻字机，激光机等</p>
-            </div>
-        </div>
-        <div class="row">
-            @foreach($products as $product)
-            <div class="col-sm-6">
-                <div class="brdr bgc-fff pad-10 box-shad btm-mrg-20 property-listing">
-                    <div class="media">
-
-                        <a class="pull-left" href="{{asset('products/'.$product->id)}}" target="_blank">
-                            <img alt="{{$product->name}}" class="img-responsive"
-                                 src="{{asset('img/product/'.$product->name.'/'.$product->indexphoto)}}"></a>
-
-                        <div class="clearfix visible-sm"></div>
-
-                        <div class="media-body fnt-smaller">
-                            <a href="#" target="_parent"></a>
-
-                            <h4 class="media-heading">
-                                <a href="{{asset('products/'.$product->id)}}" target="_blank">{{$product->name}}
-                                    <small class="pull-right">{{$product->style}}</small>
-                                </a></h4>
-
-
-                            <ul class="list-inline mrg-0 btm-mrg-10 clr-535353">
-                                {{$product->mrg}}
-                            </ul>
-
-                            <p class="hidden-xs">{{$product->miniintro}}</p><span
-                                class="fnt-smaller fnt-lighter fnt-arial">{{$product->fnt}}</span>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            @endforeach
-        </div>
-    </div>
-</div>
-{{--Product list end--}}
-
+{{--Contact end--}}
+<hr/>
 {{-- 联系表格开始 --}}
 <div id="contact">
     <div class="container">
         <div class="col-md-offset-1">
-            <h2>联系我们</h2>
+            <h2>有任何其他问题？请联系我们</h2>
         </div>
         {{ Form::open(array('url' => 'products/inquiry', 'class' => 'form-horizontal', 'role' => 'form' )) }}
         <div class="form-group">
             {{ Form::label('email', 'E-Mail', array('class' => 'col-sm-2 control-label')) }}
             <div class="col-sm-4">
-                {{ Form::email('email', null, array('placeholder'=>'youremail@example.com', 'class' => 'form-control required'))
+                {{ Form::email('email', null, array('placeholder'=>'youremail@example.com', 'class' => 'form-control'))
                 }}
             </div>
         </div>
@@ -177,7 +97,7 @@
         <div class="form-group">
             {{ Form::label('subject', 'Subject', array('class' => 'col-sm-2 control-label')) }}
             <div class="col-sm-4">
-                {{ Form::text('subject', null, array('placeholder' => 'which product you like', 'class' => 'form-control')) }}
+                {{ Form::text('subject', null, array('class' => 'form-control')) }}
             </div>
         </div>
 
@@ -203,9 +123,9 @@
     <div class="container">
         <div class="col-md-3">
         <h3>Address</h3>
-        <p>Y06 Building,11 Changchun Road, Zhengzhou City,Henan,China,450001</p>
-        <p>Tel: +86 139 3821 6025</p>
-        <p>E-mail: info@sinohuaxia.com</p>
+        <p>地址</p>
+        <p>电话</p>
+        <p>邮箱</p>
         </div>
         <div class="col-md-3">
         <h3>热门产品</h3>
@@ -218,7 +138,7 @@
         <div class="col-md-3">
                 <h3>COLLABORATION</h3>
                 <ul class="list-unstyled">
-                                        <li>Team</li>
+                                        <li><a href="">Team</a></li>
                                         <li>Office</li>
                                         <li>Partner</li>
                                         </ul>
@@ -226,9 +146,9 @@
         <div class="col-md-3">
             <h3>ABOUT</h3>
             <ul class="list-unstyled">
-                        <li><a href="{{asset('contact')}}" target="_blank">Contact</a></li>
+                        <li><a href="">Contact</a></li>
                         <li>Support</li>
-                        <li><a href="{{asset('faq')}}" target="_blank">FAQ</a></li>
+                        <li>Contact</li>
                         </ul>
         </div>
 
@@ -237,16 +157,18 @@
 
 <div id="copyright">
 <div class="container">
-<p class="h5 text-center">Copyright  © 2014 | Cotek</p>
+<p class="h5">Copyright  © 2014 | Cotek</p>
 </div>
 </div>
 {{--footer结束--}}
+
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery.min.js"><\/script>')</script>
 {{ HTML::script('assets/js/vendor/bootstrap.min.js') }}
 {{ HTML::script('assets/js/plugins.js') }}
 {{ HTML::script('assets/js/main.js') }}
+{{ HTML::script('assets/js/vendor/lightbox.min.js') }}
 
 {{--
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

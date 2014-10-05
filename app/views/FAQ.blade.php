@@ -38,7 +38,7 @@
 {{--top begin--}}
 <div id="top">
     <div class="container">
-    <p class="h5">Phone : (353) 1 8530661   |   Mail : <a href="mailto:sales@cotek.com">sales@cotek.com</a></p>
+    <p class="h5">Phone : +86 139 3821 6025   |   Mail : <a href="mailto:info@sinohuaxia.com">info@sinohuaxia.com</a></p>
     </div>
 </div>
 {{--top end--}}
@@ -65,7 +65,7 @@
     </nav>
   </div>
 {{--Mega menu end--}}
-
+<hr/>
 {{--faq begin--}}
 <div class="container">
 <h1>FAQ</h2>
