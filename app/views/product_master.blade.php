@@ -93,9 +93,9 @@
 {{-- 页头结束 --}}
 
 {{-- 证书开始 --}}
-<div class="certificado">
-    <p class="text-center"><img src="{{asset('img/certificado.png')}}" alt="Certificado"/></p>
-</div>
+{{--<div class="certificado">--}}
+    {{--<p class="text-center"><img src="{{asset('img/certificado.png')}}" alt="Certificado"/></p>--}}
+{{--</div>--}}
 {{-- 证书结束 --}}
 
 {{-- 产品功能开始 --}}
@@ -403,9 +403,9 @@
         <div class="col-md-3">
         <h3>热门产品</h3>
         <ul class="list-unstyled">
-            <li><a href="">PRODUCTS_1</a></li>
-            <li>PRODUCTS_2</li>
-            <li>PRODUCTS_3</li>
+            <li><a href="">刻字机</a></li>
+            <li>激光机</li>
+            <li>切割机</li>
             </ul>
         </div>
         <div class="col-md-3">
