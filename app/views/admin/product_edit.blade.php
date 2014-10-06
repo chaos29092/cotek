@@ -21,16 +21,13 @@
 </div>
 
 {{--category--}}
-{{--
 <div class="form-group">
     <label for="category">产品分类</label>
     {{ Form::select('category',
-    array( 'Uncategorized' => 'Uncategorized', 'E-Light' => 'E-Light','Nd-Yag Laser' => 'Nd-Yag Laser', 'IPL' => 'IPL',
-    'Diode Laser'=>'Diode Laser','CO2 Laser Fractional'=>'CO2 Laser Fractional','RF'=>'RF','Lipolaser'=>'Lipolaser','Cavitacion'=>'Cavitacion','Cryolipolysis'=>'Cryolipolysis',
-    'Multifunction'=>'Multifunction'),
+    array( 'Uncategorized' => 'Uncategorized', 'Plotter' => 'Plotter','Laser' => 'Laser', 'Router' => 'Router'),
     $product->category) }}
 </div>
---}}
+
 
 {{--主图--}}
 <div class="form-group">
