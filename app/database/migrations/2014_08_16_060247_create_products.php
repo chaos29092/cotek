@@ -15,6 +15,7 @@ class CreateProducts extends Migration {
 		Schema::create('products',function($table){
             $table->increments('id');
             $table->string('name');
+            $table->text('target');
             $table->boolean('is_discount')->default(0);
             $table->enum('category',array('Uncategorized','Plotter','Laser','Router'))->default('Uncategorized');
             $table->string('mainphoto');

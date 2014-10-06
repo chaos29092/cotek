@@ -12,6 +12,13 @@
     <input name="name" type="text" class="form-control" id="name" value="{{$product->name}}">
 </div>
 
+<div class="form-group">
+    <label for="target">Target: 该产品页面的目标</label>
+    <textarea name="target" class="form-control" id="target" rows="2">
+    {{$product->target}}
+    </textarea>
+</div>
+
 {{--是否促销 is_discount--}}
 <div class="form-group">
     <label for="is_discount">是否促销,选择是的话，该产品会被放在首页，最多20个</label>

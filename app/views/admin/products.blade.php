@@ -10,6 +10,7 @@
 <table class="table-striped table">
     <tr>
         <th>Name</th>
+        <th>Target</th>
         <th>Category</th>
         <th>Modified</th>
         <th>Operation</th>
@@ -17,6 +18,7 @@
     @foreach($products as $product)
     <tr>
         <td>{{ $product->name }}</td>
+        <td>{{ $product->target }}</td>
         <td>{{ $product->category }}</td>
         <td>{{ $product->updated_at }}</td>
         <td><a href="{{asset('admin/products/'.$product->id.'/edit')}}">
@@ -24,6 +26,9 @@
             </a>
             <a href="{{asset('admin/products/'.$product->id.'/delete')}}">
                 <button type="button" class="btn btn-danger">Delete</button>
+            </a>
+            <a href="{{asset('products/'.$product->id)}}" target="_blank">
+                <button type="button" class="btn btn-success">Browse Page</button>
             </a>
         </td>
 

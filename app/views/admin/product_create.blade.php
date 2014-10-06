@@ -12,6 +12,12 @@
     <input name="name" type="text" class="form-control" id="name">
 </div>
 
+<div class="form-group">
+    <label for="target">Target: 该产品页面的目标</label>
+    <textarea name="target" class="form-control" id="target" rows="2">
+    </textarea>
+</div>
+
 {{--产品分类--}}
 <div class="form-group">
     <label for="category">产品分类</label>
