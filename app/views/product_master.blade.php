@@ -155,9 +155,11 @@
 {{-- 产品优势结束 --}}
 
 {{-- 产品表格开始 --}}
+
 <div class="container">
     <h2 class="text-center h1">Product Parameters</h2>
-    <table class="table table-bordered">
+    @if($product->category == 'Plotter')
+    <table class="table table-bordered text-center">
         <tr>
             <th>MODEL</th>
             <th>CTK-360C</th>
@@ -235,6 +237,90 @@
             <td colspan="5">Vinyl, sticker, car sticker, decal, EC film, sand blast film, reflective sheet, cardboard, etc.</td>
         </tr>
     </table>
+    @elseif($product->category == 'Laser')
+    <table class="table table-bordered text-center">
+        <tr>
+            <th>Model</th>
+            <th>CTK-6040K</th>
+            <th>CTK-6090K</th>
+            <th>CTK-1290K</th>
+            <th>CTK-1 410K</th>
+            <th>TK-1610K</th>
+        </tr>
+        <tr>
+            <td>Processing Area</td>
+            <td>600mm×400mm</td>
+            <td>600mm×900mm</td>
+            <td>1200mm×900mm</td>
+            <td>1400mm×l000mm</td>
+            <td>1600mm×l000mm</td>
+        </tr>
+        <tr>
+            <td>Engraving Speed</td>
+            <td colspan="5">0-64000 mm/min</td>
+        </tr>
+        <tr>
+            <td>Cutting Speed</td>
+            <td colspan="5">0-36m/min</td>
+        </tr>
+        <tr>
+            <td>Laser Power</td>
+            <td colspan="5">50W/60W/120W/150W</td>
+        </tr>
+        <tr>
+            <td>Resolution Ratio</td>
+            <td colspan="5">0.0064mm</td>
+        </tr>
+        <tr>
+            <td>Minimum Shaping Size</td>
+            <td colspan="5">Chinese Character: 2×2mm, Letter: 1×1mm</td>
+        </tr>
+        <tr>
+            <td>Power Supply</td>
+            <td colspan="5">AC220V±10%, 50HZ-60HZ±1HZ</td>
+        </tr>
+        <tr>
+            <td>Location Precision</td>
+            <td colspan="5">±0.01mm</td>
+        </tr>
+        <tr>
+            <td>Gross Power</td>
+            <td colspan="5">≦1250W</td>
+        </tr>
+        <tr>
+            <td>Operating Temperature</td>
+            <td colspan="5">0℃-40℃</td>
+        </tr>
+        <tr>
+            <td>Operating Humidity</td>
+            <td colspan="5">5-95% (Non-condensing)</td>
+        </tr>
+        <tr>
+            <td>Peripheral Equipment</td>
+            <td colspan="5">Water chiller (with water protection), exhaust blower, air pump</td>
+        </tr>
+        <tr>
+            <td>Graphic format supported</td>
+            <td colspan="5">BMP. GIF. JPEG. PCX. TGA. TIFF. PLT. CDR. DMG. DXF.etc </td>
+        </tr>
+        <tr>
+            <td>Support Software</td>
+            <td colspan="5">CoreIDraw, Photoshop.AutoCAD etc</td>
+        </tr>
+        <tr>
+            <td>Applicable Materials</td>
+            <td colspan="5">Nonmetal materials like leather, cloth, plexiglass,crystal,plastic,acrylic, rubber, plastic, wooden product,ceramic tiles,ABS double color sheet etc.</td>
+        </tr>
+        <tr>
+            <td>Applicable Industries</td>
+            <td colspan="5">Advertisement decorations, handicraft, garment, shoes, bags, computerized embroidery and clipping,
+                template cutting, relief, toys, furniture, packing, printing and other industries
+</td>
+        </tr>
+    </table>
+    @elseif($product->category == 'Router')
+    <p>Router table</p>
+    @endif
 </div>
 {{-- 产品表格结束 --}}
 <hr/>
