@@ -39,10 +39,10 @@
 {{--点击到顶部箭头--}}
 <a href="#top" id="top-button" title="Top"><i class="glyphicon glyphicon-arrow-up"></i></a>
 
-{{--top begin--}}
+{{--top begin --}}
 <div id="top">
     <div class="container">
-    <p class="h5">Phone : (353) 1 8530661   |   Mail : <a href="mailto:sales@cotek.com">sales@cotek.com</a></p>
+    <p class="h5">Phone : +86 139 3821 6025   |   Mail : <a href="mailto:info@sinohuaxia.com">info@sinohuaxia.com</a></p>
     </div>
 </div>
 {{--top end--}}
@@ -60,11 +60,11 @@
     </div>
     <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="http://expo.bootcss.com"><strong>首页</strong></a></li>
+        <li><a href="/"><strong>首页</strong></a></li>
         <li><a href="http://blog.getbootstrap.com"><strong>刻字机</strong></a></li>
         <li><a href="http://blog.getbootstrap.com"><strong>激光机</strong></a></li>
-        <li><a href="http://blog.getbootstrap.com"><strong>关于我们</strong></a></li>
-        <li><a href="http://blog.getbootstrap.com"><strong>联系方式</strong></a></li>
+        <li><a href="{{asset('aboutUs')}}"><strong>关于我们</strong></a></li>
+        <li><a href="{{asset('contact')}}"><strong>联系方式</strong></a></li>
       </ul>
     </nav>
   </div>
