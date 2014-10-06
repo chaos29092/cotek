@@ -34,6 +34,10 @@
 <div class="alert alert-success" id="alertmessage">
     <p class="text-center">{{Session::get('message')}}</p>
 </div>
+@elseif(Session::has('mes'))
+<div class="alert alert-danger" id="alertmes">
+    <p class="text-center">{{Session::get('mes')}}</p>
+</div>
 @endif
 {{--message结束--}}
 {{--点击到顶部箭头--}}

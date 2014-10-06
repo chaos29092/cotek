@@ -40,9 +40,9 @@
 
 
         	<ul class="nav nav-pills nav-justified">
-              <li data-target="#myCarousel" data-slide-to="0" class="active"><a href="#">About<small>Lorem ipsum dolor sit</small></a></li>
-              <li data-target="#myCarousel" data-slide-to="1"><a href="#">Projects<small>Lorem ipsum dolor sit</small></a></li>
-              <li data-target="#myCarousel" data-slide-to="2"><a href="#">Projects<small>Lorem ipsum dolor sit</small></a></li>
+              <li data-target="#myCarousel" data-slide-to="0" class="active"><a href="#">CNC ROUTER<small>COTEK Router Series</small></a></li>
+              <li data-target="#myCarousel" data-slide-to="1"><a href="#">LASER ENGRAVING<small>COTEK Laser Series</small></a></li>
+              <li data-target="#myCarousel" data-slide-to="2"><a href="#">CUTTING PLOTTER<small>COTEK Plotter Series</small></a></li>
             </ul>
 
 

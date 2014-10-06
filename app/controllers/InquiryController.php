@@ -33,6 +33,14 @@ class InquiryController extends \BaseController {
 	public function store($product)
 	{
         $date = Input::all();
+
+        $rules = array(
+            'email'=> array('required')
+        );
+
+        $validator = Validator::make($date, $rules);
+
+        if($validator->passes()){
         $inquiry = new Inquiry;
         $inquiry->email = $date['email'];
         $inquiry->subject = $date['subject'];
@@ -44,6 +52,8 @@ class InquiryController extends \BaseController {
            $message->to(array('178399731@qq.com','chaos29092@gmail.com'), 'inquiry')->subject('网站询盘');
         });
         return Redirect::back()->with('message', 'Message Send Successfully! We will contact you as soon as possible.');
+        }
+        return Redirect::back()->with('mes', 'Message is not sent successfully! E-mail must be filled.');
 	}
 
     public function indexStore()
@@ -69,7 +79,7 @@ class InquiryController extends \BaseController {
         });
         return Redirect::back()->with('message', 'Message Send Successfully! We will contact you as soon as possible.');
         }
-        return Redirect::back()->with('message', 'Message incomplete, please fill out all the forms');
+        return Redirect::back()->with('mes', 'Message is not sent successfully! E-mail must be filled.');
     }
 
     public function faqStore()
