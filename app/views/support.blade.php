@@ -4,6 +4,10 @@
     Cotek - Support
 @stop
 
+@section('description')
+
+@stop
+
 @section('content')
 <hr/>
 <div class="container">

@@ -4,6 +4,10 @@
     Cotek - FAQ
 @stop
 
+@section('description')
+
+@stop
+
 @section('content')
 <hr/>
 {{--faq begin--}}

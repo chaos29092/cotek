@@ -4,6 +4,10 @@
     Cotek - About Us
 @stop
 
+@section('description')
+
+@stop
+
 @section('content')
 <hr/>
 <div class="container">

@@ -11,7 +11,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>@yield('title')</title>
-    <meta name="description" content="">
+    <meta name="description" content="@yield('description')">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="{{asset('img/favicon.ico')}}" title="Favicon"/>
 
@@ -56,15 +56,15 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="../" class="navbar-brand"><img class="img-responsive" src="{{asset('img/logo.png')}}" alt="cotek_logo"/></a>
+      <a href="../" class="navbar-brand"><img class="img-responsive" src="{{asset('img/logo.png')}}" alt="{{Lang::get('index_master.cotek_logo')}}"/></a>
     </div>
     <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="/"><strong>首页</strong></a></li>
-        <li><a href="http://blog.getbootstrap.com"><strong>刻字机</strong></a></li>
-        <li><a href="http://blog.getbootstrap.com"><strong>激光机</strong></a></li>
-        <li><a href="{{asset('aboutUs')}}"><strong>关于我们</strong></a></li>
-        <li><a href="{{asset('contact')}}"><strong>联系方式</strong></a></li>
+        <li><a href="/"><strong>{{Lang::get('index_master.index')}}</strong></a></li>
+        <li><a href="http://blog.getbootstrap.com"><strong>{{Lang::get('index_master.plotter')}}</strong></a></li>
+        <li><a href="http://blog.getbootstrap.com"><strong>{{Lang::get('index_master.laser')}}</strong></a></li>
+        <li><a href="{{asset('aboutUs')}}"><strong>{{Lang::get('index_master.about_us')}}</strong></a></li>
+        <li><a href="{{asset('contact')}}"><strong>{{Lang::get('index_master.contact')}}</strong></a></li>
       </ul>
     </nav>
   </div>
@@ -77,11 +77,11 @@
 <div id="contact">
     <div class="container">
         <div class="col-md-offset-1">
-            <h2>联系我们</h2>
+            <h2>{{Lang::get('index_master.contact_us')}}</h2>
         </div>
         {{ Form::open(array('url' => 'products/inquiry', 'class' => 'form-horizontal', 'role' => 'form' )) }}
         <div class="form-group">
-            {{ Form::label('email', 'E-Mail', array('class' => 'col-sm-2 control-label')) }}
+            {{ Form::label('email', Lang::get('index_master.e_mail'), array('class' => 'col-sm-2 control-label')) }}
             <div class="col-sm-4">
                 {{ Form::email('email', null, array('placeholder'=>'youremail@example.com', 'class' => 'form-control required'))
                 }}
@@ -89,14 +89,14 @@
         </div>
 
         <div class="form-group">
-            {{ Form::label('subject', 'Subject', array('class' => 'col-sm-2 control-label')) }}
+            {{ Form::label('subject', Lang::get('index_master.subject'), array('class' => 'col-sm-2 control-label')) }}
             <div class="col-sm-4">
                 {{ Form::text('subject', null, array('class' => 'form-control')) }}
             </div>
         </div>
 
         <div class="form-group">
-            {{ Form::label('message', 'Message', array('class' => 'col-sm-2 control-label')) }}
+            {{ Form::label('message', Lang::get('index_master.message'), array('class' => 'col-sm-2 control-label')) }}
             <div class="col-sm-6">
                 {{ Form::textarea('message', null, array('class' => 'form-control', 'rows' => '8')) }}
             </div>
@@ -104,7 +104,7 @@
 
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
-                {{ Form::submit('Send Message', array('class' => 'btn btn-default')) }}
+                {{ Form::submit(Lang::get('index_master.send_message'), array('class' => 'btn btn-default')) }}
             </div>
         </div>
         {{ Form::close() }}
@@ -116,33 +116,33 @@
 <div id="footer">
     <div class="container">
         <div class="col-md-3">
-        <h3>Address</h3>
-        <p>Y06 Building,11 Changchun Road, Zhengzhou City,Henan,China,450001</p>
+        <h3>{{Lang::get('index_master.address')}}</h3>
+        <p>{{Lang::get('index_master.address_1')}}</p>
         <p>Tel: +86 139 3821 6025</p>
         <p>E-mail: info@sinohuaxia.com</p>
         </div>
         <div class="col-md-3">
-        <h3>热门产品</h3>
+        <h3>{{Lang::get('index_master.hot_product')}}</h3>
         <ul class="list-unstyled">
-            <li><a href="">刻字机</a></li>
-            <li>激光机</li>
-            <li>切割机</li>
+            <li><a href="">{{Lang::get('index_master.plotter')}}</a></li>
+            <li>{{Lang::get('index_master.laser')}}</li>
+            <li>{{Lang::get('index_master.cutter')}}</li>
             </ul>
         </div>
         <div class="col-md-3">
-                <h3>COLLABORATION</h3>
+                <h3>{{Lang::get('index_master.collaboration')}}</h3>
                 <ul class="list-unstyled">
-                                        <li>Team</li>
-                                        <li>Office</li>
-                                        <li>Partner</li>
+                                        <li>{{Lang::get('index_master.team')}}</li>
+                                        <li>{{Lang::get('index_master.office')}}</li>
+                                        <li>{{Lang::get('index_master.partner')}}</li>
                                         </ul>
                 </div>
         <div class="col-md-3">
-            <h3>ABOUT</h3>
+            <h3>{{Lang::get('index_master.about')}}</h3>
             <ul class="list-unstyled">
-                        <li><a href="{{asset('contact')}}" target="_blank">Contact</a></li>
-                        <li><a href="{{asset('support')}}" target="_blank">Support</a></li>
-                        <li><a href="{{asset('faq')}}" target="_blank">FAQ</a></li>
+                        <li><a href="{{asset('contact')}}" target="_blank">{{Lang::get('index_master.contact_1')}}</a></li>
+                        <li><a href="{{asset('support')}}" target="_blank">{{Lang::get('index_master.support')}}</a></li>
+                        <li><a href="{{asset('faq')}}" target="_blank">{{Lang::get('index_master.faq')}}</a></li>
                         </ul>
         </div>
 

@@ -4,6 +4,10 @@
     Cotek - All {{$category}}
 @stop
 
+@section('description')
+
+@stop
+
 @section('content')
 
 {{--Product list begin--}}

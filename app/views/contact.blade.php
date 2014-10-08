@@ -4,6 +4,10 @@
     Cotek - Contact
 @stop
 
+@section('description')
+
+@stop
+
 @section('content')
 <hr/>
 {{--Contact begin--}}

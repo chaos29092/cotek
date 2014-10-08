@@ -4,6 +4,10 @@
     Cotek - Index
 @stop
 
+@section('description')
+
+@stop
+
 @section('content')
     {{--Carousel begin--}}
     <div class="container">
@@ -40,9 +44,9 @@
 
 
         	<ul class="nav nav-pills nav-justified">
-              <li data-target="#myCarousel" data-slide-to="0" class="active"><a href="#">CNC ROUTER<small>COTEK Router Series</small></a></li>
-              <li data-target="#myCarousel" data-slide-to="1"><a href="#">LASER ENGRAVING<small>COTEK Laser Series</small></a></li>
-              <li data-target="#myCarousel" data-slide-to="2"><a href="#">CUTTING PLOTTER<small>COTEK Plotter Series</small></a></li>
+              <li data-target="#myCarousel" data-slide-to="0" class="active"><a href="#">{{Lang::get('index.cnc_router')}}<small>{{Lang::get('index.s1')}}</small></a></li>
+              <li data-target="#myCarousel" data-slide-to="1"><a href="#">{{Lang::get('index.cnc_engraving')}}<small>{{Lang::get('index.s2')}}</small></a></li>
+              <li data-target="#myCarousel" data-slide-to="2"><a href="#">{{Lang::get('index.cnc_plotter')}}<small>{{Lang::get('index.s3')}}</small></a></li>
             </ul>
 
 
@@ -55,8 +59,8 @@
         <div class="container container-pad" id="property-listings">
             <div class="row">
                 <div class="col-md-12">
-                    <h1>我们能为您提供什么</h1>
-                    <p>刻字机，激光机等</p>
+                    <h1>{{Lang::get('index.offer')}}</h1>
+                    <p>{{Lang::get('index.des')}}</p>
                 </div>
             </div>
             <div class="row">
