@@ -1,7 +1,7 @@
 @extends('index_master')
 
 @section('title')
-    Cotek - Contact
+    Cotek - {{Lang::get('index_master.contact_1')}}
 @stop
 
 @section('description')
@@ -12,7 +12,7 @@
 <hr/>
 {{--Contact begin--}}
 <div class="container">
-<h1>Contact</h1>
+<h1>{{Lang::get('index_master.contact_1')}}</h1>
 <address>
   <strong>Henan Huaxia Haina Sales & Marketing Co.,Ltd. </strong><br>
   Y06 Building,11 Changchun Road,<br>

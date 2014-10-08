@@ -60,15 +60,15 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="../" class="navbar-brand"><img class="img-responsive" src="{{asset('img/logo.png')}}" alt="cotek_logo"/></a>
+      <a href="../" class="navbar-brand"><img class="img-responsive" src="{{asset('img/logo.png')}}" alt="{{Lang::get('index_master.cotek_logo')}}"/></a>
     </div>
     <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="/"><strong>首页</strong></a></li>
-        <li><a href="http://blog.getbootstrap.com"><strong>刻字机</strong></a></li>
-        <li><a href="http://blog.getbootstrap.com"><strong>激光机</strong></a></li>
-        <li><a href="{{asset('aboutUs')}}"><strong>关于我们</strong></a></li>
-        <li><a href="{{asset('contact')}}"><strong>联系方式</strong></a></li>
+        <li><a href="/"><strong>{{Lang::get('index_master.index')}}</strong></a></li>
+        <li><a href="http://blog.getbootstrap.com"><strong>{{Lang::get('index_master.plotter')}}</strong></a></li>
+        <li><a href="http://blog.getbootstrap.com"><strong>{{Lang::get('index_master.laser')}}</strong></a></li>
+        <li><a href="{{asset('aboutUs')}}"><strong>{{Lang::get('index_master.about_us')}}</strong></a></li>
+        <li><a href="{{asset('contact')}}"><strong>{{Lang::get('index_master.contact')}}</strong></a></li>
       </ul>
     </nav>
   </div>
@@ -161,11 +161,11 @@
 {{-- 产品表格开始 --}}
 
 <div class="container">
-    <h2 class="text-center h1">Product Parameters</h2>
+    <h2 class="text-center h1">{{Lang::get('product.pp')}}</h2>
     @if($product->category == 'Plotter')
     <table class="table table-bordered text-center">
         <tr>
-            <th>MODEL</th>
+            <th>{{Lang::get('product.th_1')}}</th>
             <th>CTK-360C</th>
             <th>CTK-720C</th>
             <th>CTK-870C</th>
@@ -173,7 +173,7 @@
             <th>CTK-1350C</th>
         </tr>
         <tr>
-            <td>Max Paper Width</td>
+            <td>{{Lang::get('product.td_1')}}</td>
             <td>360mm</td>
             <td>720mm</td>
             <td>870mm</td>
@@ -181,7 +181,7 @@
             <td>1350mm</td>
         </tr>
         <tr>
-            <td>Max Cutting Width</td>
+            <td>{{Lang::get('product.td_2')}}</td>
             <td>330mm(12" )</td>
             <td>630mm(24" )</td>
             <td>780mm(30" )</td>
@@ -189,62 +189,62 @@
             <td>1260mm(48" )</td>
         </tr>
         <tr>
-            <td>Motor</td>
-            <td colspan="5">Original imported high speed stepper/servo motor</td>
+            <td>{{Lang::get('product.td_3')}}</td>
+            <td colspan="5">{{Lang::get('product.td_4')}}</td>
         </tr>
         <tr>
-            <td>Cutting pressure/Speed</td>
+            <td>{{Lang::get('product.td_5')}}</td>
             <td colspan="5">10-990g  /  50-800mm/s</td>
         </tr>
         <tr>
-            <td>Repeatable precision</td>
+            <td>{{Lang::get('product.td_6')}}</td>
             <td colspan="5">< ±0.1mm</td>
         </tr>
         <tr>
-            <td>Carriage</td>
-            <td colspan="5">Whole aluminum Carriage with Imported Gear inside.</td>
+            <td>{{Lang::get('product.td_7')}}</td>
+            <td colspan="5">{{Lang::get('product.td_8')}}</td>
         </tr>
         <tr>
-            <td>Mechanical Resolution</td>
+            <td>{{Lang::get('product.td_9')}}</td>
             <td colspan="5">0.0254mm/Step(0.001"/step)</td>
         </tr>
         <tr>
-            <td>Special Setting</td>
-            <td colspan="5">Dual Cutter holders, Dual strips</td>
+            <td>{{Lang::get('product.td_10')}}</td>
+            <td colspan="5">{{Lang::get('product.td_11')}}</td>
         </tr>
         <tr>
-            <td>Stands</td>
-            <td colspan="5">Yes, All comes with Stand besides CTK-360C</td>
+            <td>{{Lang::get('product.td_12')}}</td>
+            <td colspan="5">{{Lang::get('product.td_13')}}</td>
         </tr>
         <tr>
-            <td>Interface/EMS-memory</td>
-            <td colspan="5">Serial & USB / 8M or Serial, USB, reticle & USB flash disk </td>
+            <td>{{Lang::get('product.td_14')}}</td>
+            <td colspan="5">{{Lang::get('product.td_15')}}</td>
         </tr>
         <tr>
-            <td>Control language</td>
+            <td>{{Lang::get('product.td_16')}}</td>
             <td colspan="5">DMPL/HPGL </td>
         </tr>
         <tr>
-            <td>Type of cutter</td>
-            <td colspan="5">Long longevity high-speed carbon alloy-steel cutter</td>
+            <td>{{Lang::get('product.td_17')}}</td>
+            <td colspan="5">{{Lang::get('product.td_18')}}</td>
         </tr>
         <tr>
-            <td>System</td>
-            <td colspan="5">Vista 32bit&64bit, Win 7 32bits&64bits, XP, MAC, etc.</td>
+            <td>{{Lang::get('product.td_23')}}</td>
+            <td colspan="5">{{Lang::get('product.td_24')}}</td>
         </tr>
         <tr>
-            <td>Software</td>
-            <td colspan="5">CorelDraw, Artcut, Master Cut, Sign Cut pro, Flexi starter, Ucancam, Adobe Illustrator, etc.</td>
+            <td>{{Lang::get('product.td_19')}}</td>
+            <td colspan="5">{{Lang::get('product.td_20')}}</td>
         </tr>
         <tr>
-            <td>Cutting materials</td>
-            <td colspan="5">Vinyl, sticker, car sticker, decal, EC film, sand blast film, reflective sheet, cardboard, etc.</td>
+            <td>{{Lang::get('product.td_21')}}</td>
+            <td colspan="5">{{Lang::get('product.td_22')}}</td>
         </tr>
     </table>
     @elseif($product->category == 'Laser')
     <table class="table table-bordered text-center">
         <tr>
-            <th>Model</th>
+            <th>{{Lang::get('product.th_1')}}</th>
             <th>CTK-6040K</th>
             <th>CTK-6090K</th>
             <th>CTK-1290K</th>
@@ -252,7 +252,7 @@
             <th>TK-1610K</th>
         </tr>
         <tr>
-            <td>Processing Area</td>
+            <td>{{Lang::get('product.t2d_1')}}</td>
             <td>600mm×400mm</td>
             <td>600mm×900mm</td>
             <td>1200mm×900mm</td>
@@ -260,66 +260,64 @@
             <td>1600mm×l000mm</td>
         </tr>
         <tr>
-            <td>Engraving Speed</td>
+            <td>{{Lang::get('product.t2d_2')}}</td>
             <td colspan="5">0-64000 mm/min</td>
         </tr>
         <tr>
-            <td>Cutting Speed</td>
+            <td>{{Lang::get('product.t2d_23')}}</td>
             <td colspan="5">0-36m/min</td>
         </tr>
         <tr>
-            <td>Laser Power</td>
+            <td>{{Lang::get('product.t2d_3')}}</td>
             <td colspan="5">50W/60W/120W/150W</td>
         </tr>
         <tr>
-            <td>Resolution Ratio</td>
+            <td>{{Lang::get('product.t2d_4')}}</td>
             <td colspan="5">0.0064mm</td>
         </tr>
         <tr>
-            <td>Minimum Shaping Size</td>
-            <td colspan="5">Chinese Character: 2×2mm, Letter: 1×1mm</td>
+            <td>{{Lang::get('product.t2d_5')}}</td>
+            <td colspan="5">{{Lang::get('product.t2d_6')}}</td>
         </tr>
         <tr>
-            <td>Power Supply</td>
+            <td>{{Lang::get('product.t2d_7')}}</td>
             <td colspan="5">AC220V±10%, 50HZ-60HZ±1HZ</td>
         </tr>
         <tr>
-            <td>Location Precision</td>
+            <td>{{Lang::get('product.t2d_8')}}</td>
             <td colspan="5">±0.01mm</td>
         </tr>
         <tr>
-            <td>Gross Power</td>
+            <td>{{Lang::get('product.t2d_9')}}</td>
             <td colspan="5">≦1250W</td>
         </tr>
         <tr>
-            <td>Operating Temperature</td>
+            <td>{{Lang::get('product.t2d_10')}}</td>
             <td colspan="5">0℃-40℃</td>
         </tr>
         <tr>
-            <td>Operating Humidity</td>
-            <td colspan="5">5-95% (Non-condensing)</td>
+            <td>{{Lang::get('product.t2d_11')}}</td>
+            <td colspan="5">5-95% ({{Lang::get('product.t2d_12')}})</td>
         </tr>
         <tr>
-            <td>Peripheral Equipment</td>
-            <td colspan="5">Water chiller (with water protection), exhaust blower, air pump</td>
+            <td>{{Lang::get('product.t2d_13')}}</td>
+            <td colspan="5">{{Lang::get('product.t2d_14')}}</td>
         </tr>
         <tr>
-            <td>Graphic format supported</td>
+            <td>{{Lang::get('product.t2d_15')}}</td>
             <td colspan="5">BMP. GIF. JPEG. PCX. TGA. TIFF. PLT. CDR. DMG. DXF.etc </td>
         </tr>
         <tr>
-            <td>Support Software</td>
+            <td>{{Lang::get('product.t2d_17')}}</td>
             <td colspan="5">CoreIDraw, Photoshop.AutoCAD etc</td>
         </tr>
         <tr>
-            <td>Applicable Materials</td>
-            <td colspan="5">Nonmetal materials like leather, cloth, plexiglass,crystal,plastic,acrylic, rubber, plastic, wooden product,ceramic tiles,ABS double color sheet etc.</td>
+            <td>{{Lang::get('product.t2d_19')}}</td>
+            <td colspan="5">{{Lang::get('product.t2d_20')}}</td>
         </tr>
         <tr>
-            <td>Applicable Industries</td>
-            <td colspan="5">Advertisement decorations, handicraft, garment, shoes, bags, computerized embroidery and clipping,
-                template cutting, relief, toys, furniture, packing, printing and other industries
-</td>
+            <td>{{Lang::get('product.t2d_21')}}</td>
+            <td colspan="5">{{Lang::get('product.t2d_22')}}</td>
         </tr>
     </table>
     @elseif($product->category == 'Router')
@@ -330,7 +328,7 @@
 <hr/>
 {{-- 体现实力开始 --}}
 <div>
-    <h2 class="text-center h1">Our Factory and Clients</h2>
+    <h2 class="text-center h1">{{Lang::get('product.fc')}}</h2>
     <img src="{{asset('img/Global_Customer_2.jpg')}}" class="img-responsive" alt=""/>
 </div>
 {{-- 体现实力结束 --}}
@@ -339,7 +337,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-2">
-                <p class="text-center"><img src="{{asset('img\author.jpg')}}" alt="Elena" class="img-circle"/></p>
+                <p class="text-center"><img src="{{asset('img\author.jpg')}}" alt="author" class="img-circle"/></p>
             </div>
             <div class="col-md-5">
                 {{$product->tocustomer}}
@@ -356,11 +354,11 @@
 <div id="contact">
     <div class="container">
         <div class="col-md-offset-1">
-            <h2>Contáctenos</h2>
+            <h2>{{Lang::get('index_master.contact_us')}}</h2>
         </div>
         {{ Form::open(array('url' => $url, 'class' => 'form-horizontal', 'role' => 'form' )) }}
         <div class="form-group">
-            {{ Form::label('email', 'E-Mail', array('class' => 'col-sm-2 control-label')) }}
+            {{ Form::label('email', Lang::get('index_master.e_mail'), array('class' => 'col-sm-2 control-label')) }}
             <div class="col-sm-4">
                 {{ Form::email('email', null, array('placeholder'=>'youremail@example.com', 'class' => 'form-control'))
                 }}
@@ -368,14 +366,14 @@
         </div>
 
         <div class="form-group">
-            {{ Form::label('subject', 'Subject', array('class' => 'col-sm-2 control-label')) }}
+            {{ Form::label('subject', Lang::get('index_master.subject'), array('class' => 'col-sm-2 control-label')) }}
             <div class="col-sm-4">
                 {{ Form::text('subject', null, array('placeholder' => $product->name, 'class' => 'form-control')) }}
             </div>
         </div>
 
         <div class="form-group">
-            {{ Form::label('message', 'Message', array('class' => 'col-sm-2 control-label')) }}
+            {{ Form::label('message', Lang::get('index_master.message'), array('class' => 'col-sm-2 control-label')) }}
             <div class="col-sm-6">
                 {{ Form::textarea('message', null, array('class' => 'form-control', 'rows' => '8')) }}
             </div>
@@ -383,7 +381,7 @@
 
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
-                {{ Form::submit('Send Message', array('class' => 'btn btn-default')) }}
+                {{ Form::submit(Lang::get('index_master.send_message'), array('class' => 'btn btn-default')) }}
             </div>
         </div>
         {{ Form::close() }}
@@ -395,33 +393,33 @@
 <div id="footer">
     <div class="container">
         <div class="col-md-3">
-        <h3>Address</h3>
-        <p>Y06 Building,11 Changchun Road, Zhengzhou City,Henan,China,450001</p>
+        <h3>{{Lang::get('index_master.address')}}</h3>
+        <p>{{Lang::get('index_master.address_1')}}</p>
         <p>Tel: +86 139 3821 6025</p>
         <p>E-mail: info@sinohuaxia.com</p>
         </div>
         <div class="col-md-3">
-        <h3>热门产品</h3>
+        <h3>{{Lang::get('index_master.hot_product')}}</h3>
         <ul class="list-unstyled">
-            <li><a href="">刻字机</a></li>
-            <li>激光机</li>
-            <li>切割机</li>
+            <li><a href="">{{Lang::get('index_master.plotter')}}</a></li>
+            <li>{{Lang::get('index_master.laser')}}</li>
+            <li>{{Lang::get('index_master.cutter')}}</li>
             </ul>
         </div>
         <div class="col-md-3">
-                <h3>COLLABORATION</h3>
+                <h3>{{Lang::get('index_master.collaboration')}}</h3>
                 <ul class="list-unstyled">
-                                        <li>Team</li>
-                                        <li>Office</li>
-                                        <li>Partner</li>
+                                        <li>{{Lang::get('index_master.team')}}</li>
+                                        <li>{{Lang::get('index_master.office')}}</li>
+                                        <li>{{Lang::get('index_master.partner')}}</li>
                                         </ul>
                 </div>
         <div class="col-md-3">
-            <h3>ABOUT</h3>
+            <h3>{{Lang::get('index_master.about')}}</h3>
             <ul class="list-unstyled">
-                        <li><a href="{{asset('contact')}}" target="_blank">Contact</a></li>
-                        <li><a href="{{asset('support')}}" target="_blank">Support</a></li>
-                        <li><a href="{{asset('faq')}}" target="_blank">FAQ</a></li>
+                        <li><a href="{{asset('contact')}}" target="_blank">{{Lang::get('index_master.contact_1')}}</a></li>
+                        <li><a href="{{asset('support')}}" target="_blank">{{Lang::get('index_master.support')}}</a></li>
+                        <li><a href="{{asset('faq')}}" target="_blank">{{Lang::get('index_master.faq')}}</a></li>
                         </ul>
         </div>
 

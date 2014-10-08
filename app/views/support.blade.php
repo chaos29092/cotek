@@ -1,7 +1,7 @@
 @extends('index_master')
 
 @section('title')
-    Cotek - Support
+    Cotek - {{Lang::get('index_master.support')}}
 @stop
 
 @section('description')
@@ -11,23 +11,23 @@
 @section('content')
 <hr/>
 <div class="container">
-    <h1>Support</h1>
+    <h1>{{Lang::get('index_master.support')}}</h1>
     <hr/>
-    <h3>Sell on credit</h3>
-    <p>If customers order large quantity of product from China, but lack of money, we can supply the goods in advance and accepted up to six (6) months payment term for the customers. </p>
+    <h3>{{Lang::get('support.h1')}}</h3>
+    <p>{{Lang::get('support.p1')}}</p>
     <hr/>
-    <h3>Product sourcing solution</h3>
-    <p>We can help customer to source products in China for quality purposed. Our company has professional team of quality control, especially, our company can compensate for loss of customer in advance, due to quality problem.</p>
+    <h3>{{Lang::get('support.h2')}}</h3>
+    <p>{{Lang::get('support.p2')}}</p>
     <hr/>
-    <h3>Share Pieces Offered Free for Distributors</h3>
-    <p>To develop international market, we offer share pieces free to worldwide distributors before it goes public. </p>
-    <p>Details are as follows: </p>
+    <h3>{{Lang::get('support.h3')}}</h3>
+    <p>{{Lang::get('support.p3')}}</p>
+    <p>{{Lang::get('support.p4')}}</p>
     <table class="table table-bordered">
         <tr>
-            <th>Initial Purchase(USD)</th>
-            <th>Equivalent(RMB)</th>
-            <th>Annual sales amount (USD)</th>
-            <th>Free share proportion</th>
+            <th>{{Lang::get('support.th_1')}}(USD)</th>
+            <th>{{Lang::get('support.th_2')}}(RMB)</th>
+            <th>{{Lang::get('support.th_3')}}(USD)</th>
+            <th>{{Lang::get('supprot.th_4')}}</th>
         </tr>
         <tr>
             <td>0.2million</td>
@@ -48,7 +48,7 @@
                     <td>0.06%</td>
             </tr>
     </table>
-    <p>Initial Purchase(USD)	Equivalent(RMB)	Annual sales amount (USD)	Free share proportion 0.2million	1.2million	2million USD	0.6% 0.1million 0.6million	1million USD	0.3% 0.02million	0.12million	0.2million USD	0.06% Note: According to professional evaluation, current market value of Cotek factory is RMB 200million. For example, if you place initial order USD 0.2million (nearly RMB 1.2million), then could get 1.2/200=0.6% factory share, on condition that you should meet the sales amount 0.2*10=2 million USD per year.</p>
+    <p>{{Lang::get('support.p5')}}</p>
 </div>
 <hr/>
 @stop
