@@ -80,7 +80,7 @@
         <div class="row" id="head">
             <div class="col-md-6">
                 <img src="{{asset('img/product/'.$product->name.'/'.$product->mainphoto)}}" alt="{{$product->name}}"
-                     class="img-responsive"/>
+                     class="img-responsive center-block"/>
             </div>
             <div class="col-md-6">
                 {{$product->introduction}}
@@ -245,19 +245,19 @@
     <table class="table table-bordered text-center">
         <tr>
             <th>{{Lang::get('product.th_1')}}</th>
+            <th>CTK-2030K</th>
+            <th>CTK-3040K</th>
             <th>CTK-6040K</th>
             <th>CTK-6090K</th>
             <th>CTK-1290K</th>
-            <th>CTK-1 410K</th>
-            <th>TK-1610K</th>
         </tr>
         <tr>
             <td>{{Lang::get('product.t2d_1')}}</td>
+            <td>200mm×300mm</td>
+            <td>300mm×400mm</td>
             <td>600mm×400mm</td>
             <td>600mm×900mm</td>
             <td>1200mm×900mm</td>
-            <td>1400mm×l000mm</td>
-            <td>1600mm×l000mm</td>
         </tr>
         <tr>
             <td>{{Lang::get('product.t2d_2')}}</td>
