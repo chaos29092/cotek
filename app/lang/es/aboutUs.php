@@ -1,0 +1,15 @@
+<?php
+
+return array(
+
+    "p1"=>"Como es la primera institución de inversión de capital de riesgo privado y la primera instituciones de inversión ángel de la provincia de Henan, Henan Huaxia Haina Venture Capital Group ha sido una marca líder en esta área. Toma la responsabilidad de promover el desarrollo de la actividad de capital riesgo en China, se adhieren a los valores fundamentales de \"reconocer ahora, invertir ma?ana,\" y se adhieren a la filosofía empresarial de \"trabajar, compartir y desarrollar juntos \". Habíamos desarrollado e invertido un grupo de importantes proyectos científicos y tecnológicos y empresas de semillas; nos centramos en foster Henan productividad futura y de haber sido un pionero y líder en el campo de capital de riesgo Henan .. ",
+    "p2"=>"Henan Huaxia Haina Sales and Marketing Co., Ltd.",
+    "p2"=>"que es pertenecer a Henan Huaxia Haina Grupo de Inversión reúne el estudio, dise?o, producción e internacional
+comercialización juntos como una empresa de marketing. ",
+    "p3"=>"Basándose en la tecnología y el servicio para alcanzar el desarrollo y continuamente ofrecer a los clientes satisfechos productos son nuestra búsqueda constante. Sobre el base de la plena introducción de la tecnología extranjera avanzada, hemos desarrollado con éxito una variedad de equipos que son ampliamente utiliza en el campo de la publicidad, el arquitectura, la protección del medio ambiente y la energía médica etc. Huaxia Haina enfoque el adhesión a \"calidad de la supervivencia. Variedad para el desarrollo \".Y continua mejorar la calidad de los productos y variedades para satisfacer la demanda del mercado. ",
+
+    "p4"=>"Ahora el negocio principal de nuestra empresa cubre los siguientes aspectos:",
+    "p5"=>"Equipo de publicidad (CNC router, impresoras, máquinas de bandera, etc), pintura, equipos médicos (extracción de DNA kit,cirugía uterina monitor de ultrasonido). Al mismo tiempo, nuestra empresa también amplía nuestro negocio a los campos de protección del medio ambiente y las fuentes de energía. ",
+    "p6"=>"Nuestra empresa persigue la directriz de \"progreso,viabilidad,precisión,unidad\", concede gran importancia a la tecnología y la calidad, y hace el progreso continuo,dedicada a proporcionar a los clientes la mejor relación costo productos eficaces con un servicio atento. ",
+    "p7"=>"Con la expansión constante, aumentamos el capital en la operación. Hemos comprado 32 hectáreas de terreno para construir una moderna planta de fabricación, con 20.000 metros cuadrados, que se supone que ser puesto en producción al medio de 2014.Atraemos clientes desde todas las direcciones, haciendo hincapié en la función básica de la integridad, productos de calidad superior, precio razonable y servicio favorable.Todo el personal se zancadas hacia la meta más alta, mediante la mejora de la capacidad competitiva en el núcelo de sí mismos, sosteniendo en el espíritu de seguir adelante sin ningún tipo de satisfacción. ",
+);
