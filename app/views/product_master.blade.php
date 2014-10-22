@@ -259,6 +259,7 @@
             <td>600mm×900mm</td>
             <td>1200mm×900mm</td>
         </tr>
+        {{--
         <tr>
             <td>{{Lang::get('product.t2d_2')}}</td>
             <td colspan="5">0-64000 mm/min</td>
@@ -267,18 +268,22 @@
             <td>{{Lang::get('product.t2d_23')}}</td>
             <td colspan="5">0-36m/min</td>
         </tr>
+        --}}
         <tr>
             <td>{{Lang::get('product.t2d_3')}}</td>
             <td colspan="5">50W/60W/120W/150W</td>
         </tr>
+        {{--
         <tr>
             <td>{{Lang::get('product.t2d_4')}}</td>
             <td colspan="5">0.0064mm</td>
         </tr>
+        --}}
         <tr>
             <td>{{Lang::get('product.t2d_5')}}</td>
             <td colspan="5">{{Lang::get('product.t2d_6')}}</td>
         </tr>
+        {{--
         <tr>
             <td>{{Lang::get('product.t2d_7')}}</td>
             <td colspan="5">AC220V±10%, 50HZ-60HZ±1HZ</td>
@@ -303,6 +308,7 @@
             <td>{{Lang::get('product.t2d_13')}}</td>
             <td colspan="5">{{Lang::get('product.t2d_14')}}</td>
         </tr>
+        --}}
         <tr>
             <td>{{Lang::get('product.t2d_15')}}</td>
             <td colspan="5">BMP. GIF. JPEG. PCX. TGA. TIFF. PLT. CDR. DMG. DXF.etc </td>
@@ -311,6 +317,7 @@
             <td>{{Lang::get('product.t2d_17')}}</td>
             <td colspan="5">CoreIDraw, Photoshop.AutoCAD etc</td>
         </tr>
+        {{--
         <tr>
             <td>{{Lang::get('product.t2d_19')}}</td>
             <td colspan="5">{{Lang::get('product.t2d_20')}}</td>
@@ -319,6 +326,7 @@
             <td>{{Lang::get('product.t2d_21')}}</td>
             <td colspan="5">{{Lang::get('product.t2d_22')}}</td>
         </tr>
+        --}}
     </table>
     @elseif($product->category == 'Router')
     <p>Router table</p>
